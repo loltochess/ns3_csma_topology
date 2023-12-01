@@ -160,7 +160,7 @@ echoClient3 : n3 , echoServer3 : n6
   // Packet 2
   UdpEchoServerHelper echoServer2 (10);
   //////// Your Code ////////
-  ApplicationContainer serverApps2 = echoServer1.Install(csmaNodes.Get(4));
+  ApplicationContainer serverApps2 = echoServer2.Install(csmaNodes.Get(4));
   serverApps2.Start (Seconds (1.0));
   serverApps2.Stop (Seconds (simTime));
 
